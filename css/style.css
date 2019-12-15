@@ -1,0 +1,42 @@
+
+
+.box {
+    margin: 50px auto;
+    width: 600px; height: 600px;
+    position: relative;
+    transform: rotateX(-96deg);
+    transform-style: preserve-3d;
+}
+
+.lo {
+    width: 160px; height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 220px;
+    border-radius: 5px;
+    background-size: 160px 200px;
+}
+
+.lo-1 {transform: translateY(-250px) rotateX(90deg); background: url(../images/01.JPG)}
+.lo-2 {transform: rotate(45deg) translateY(-250px) rotateX(90deg);background: url(../images/02.JPG)}
+.lo-3 {transform: rotate(90deg) translateY(-250px) rotateX(90deg);background: url(../images/03.JPG)}
+.lo-4 {transform: rotate(135deg) translateY(-250px) rotateX(90deg);background: url(../images/04.JPG)}
+.lo-5 {transform: rotate(180deg) translateY(-250px) rotateX(90deg);background: url(../images/05.JPG)}
+.lo-6 {transform: rotate(225deg) translateY(-250px) rotateX(90deg);background: url(../images/06.JPG)}
+.lo-7 {transform: rotate(270deg) translateY(-250px) rotateX(90deg);background: url(../images/07.JPG)}
+.lo-8 {transform: rotate(315deg) translateY(-250px) rotateX(90deg);background: url(../images/08.JPG)}
+
+.lun {
+    width: 600px; height: 600px;
+    transform-style: preserve-3d;
+    animation: look 10s infinite;
+}
+
+@keyframes look {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(72deg);}
+    40% {transform: rotate(144deg);}
+    60% {transform: rotate(216deg);}
+    80% {transform: rotate(288deg);} 
+    100% {transform: rotate(360deg);}
+}
